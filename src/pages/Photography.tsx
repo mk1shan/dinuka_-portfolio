@@ -33,47 +33,47 @@ const Photography = () => {
 
   const portfolioImages = [
     {
-      src: '/public/images/1.jpg',
+      src: 'images/1.jpg',
       span: 'col-span-2 row-span-2',
       category: 'Wedding',
     },
     {
-      src: '//public/images/2.jpg',
+      src: '/images/2.jpg',
       span: 'col-span-1 row-span-1',
       category: 'Portrait',
     },
     {
-      src: '/public/images/3.jpg',
+      src: '/images/3.jpg',
       span: 'col-span-1 row-span-1',
       category: 'Event',
     },
     {
-      src: '/public/images/4.jpg',
+      src: '/images/4.jpg',
       span: 'col-span-1 row-span-2',
       category: 'Fashion',
     },
     {
-      src: '/public/images/5.jpg',
+      src: '/images/5.jpg',
       span: 'col-span-2 row-span-1',
       category: 'Wedding',
     },
     {
-      src: '/public/images/6.jpg',
+      src: '/images/6.jpg',
       span: 'col-span-1 row-span-1',
       category: 'Portrait',
     },
     {
-      src: '/public/images/7.jpg',
+      src: '/images/7.jpg',
       span: 'col-span-2 row-span-2',
       category: 'Event',
     },
     {
-      src: '/public/images/8.jpg',
+      src: '/images/8.jpg',
       span: 'col-span-1 row-span-1',
       category: 'Fashion',
     },
     {
-      src: '/public/images/9.jpg',
+      src: '/images/9.jpg',
       span: 'col-span-1 row-span-1',
       category: 'Portrait',
     },
@@ -85,7 +85,7 @@ const Photography = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <ImageOptimizer
-            src="/public/images/10.jpg"
+            src="/images/10.jpg"
             alt="Photography Hero"
             className="w-full h-full object-cover"
           />

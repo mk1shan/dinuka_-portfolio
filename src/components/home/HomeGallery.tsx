@@ -80,7 +80,6 @@ export const HomeGallery = () => {
                         src={item.url}
                         alt={item.title}
                         className="w-full h-full object-cover"
-                        width={1200}
                         quality={90}
                       />
                     </motion.div>
