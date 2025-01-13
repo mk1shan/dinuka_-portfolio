@@ -33,47 +33,47 @@ const Photography = () => {
 
   const portfolioImages = [
     {
-      src: '/images/386740768_872424397767634_2406891365353878124_n.jpg',
+      src: '/public/images/1.jpg',
       span: 'col-span-2 row-span-2',
       category: 'Wedding',
     },
     {
-      src: '/images/430018448_719210467048641_4958362212388547001_n.jpg',
+      src: '//public/images/2.jpg',
       span: 'col-span-1 row-span-1',
       category: 'Portrait',
     },
     {
-      src: '/images/409082841_719210353715319_1512343650740324422_n.jpg',
+      src: '/public/images/3.jpg',
       span: 'col-span-1 row-span-1',
       category: 'Event',
     },
     {
-      src: '/images/431679952_727171266252561_8333342145955110732_n.jpg',
+      src: '/public/images/4.jpg',
       span: 'col-span-1 row-span-2',
       category: 'Fashion',
     },
     {
-      src: '/images/431718465_727171112919243_3864534063747622005_n.jpg',
+      src: '/public/images/5.jpg',
       span: 'col-span-2 row-span-1',
       category: 'Wedding',
     },
     {
-      src: '/images/431383707_727171029585918_6909410846438431688_n.jpg',
+      src: '/public/images/6.jpg',
       span: 'col-span-1 row-span-1',
       category: 'Portrait',
     },
     {
-      src: '/images/449250711_792240543078966_6040839960755229386_n.jpg',
+      src: '/public/images/7.jpg',
       span: 'col-span-2 row-span-2',
       category: 'Event',
     },
     {
-      src: '/images/424982953_719164643719890_993065263064835104_n.jpg',
+      src: '/public/images/8.jpg',
       span: 'col-span-1 row-span-1',
       category: 'Fashion',
     },
     {
-      src: '/images/363385928_831559638520777_2058469060770947524_n.jpg',
+      src: '/public/images/9.jpg',
       span: 'col-span-1 row-span-1',
       category: 'Portrait',
     },
@@ -85,7 +85,7 @@ const Photography = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <ImageOptimizer
-            src="/images/472179219_920601650242854_7270190166170734193_n.jpg"
+            src="/public/images/10.jpg"
             alt="Photography Hero"
             className="w-full h-full object-cover"
           />
