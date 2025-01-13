@@ -20,7 +20,7 @@ const services = [
   {
     icon: Calendar,
     title: "Event Planning",
-    description: "As the founder of DADA Entertainment, I offer comprehensive event planning services that bring your vision to life with meticulous attention to detail.",
+    description: "As the founder of DADS Entertainment, I offer comprehensive event planning services that bring your vision to life with meticulous attention to detail.",
     features: ["Wedding Planning", "Corporate Events", "Social Gatherings", "Festival Management"]
   }
 ];
