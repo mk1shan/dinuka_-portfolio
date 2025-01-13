@@ -12,72 +12,71 @@ const Photography = () => {
     {
       icon: Heart,
       title: "Wedding Photography",
-      description: "Capturing your special moments with artistic vision"
+      description: "Capturing your special moments with artistic vision",
     },
     {
       icon: Users,
       title: "Family Portraits",
-      description: "Beautiful family portraits that tell your story"
+      description: "Beautiful family portraits that tell your story",
     },
     {
       icon: Building,
       title: "Corporate Events",
-      description: "Professional coverage for business events"
+      description: "Professional coverage for business events",
     },
     {
       icon: Camera,
       title: "Fashion Photography",
-      description: "Creative fashion and model photography"
-    }
+      description: "Creative fashion and model photography",
+    },
   ];
 
-  // Portfolio grid configuration with layout information
   const portfolioImages = [
     {
-      src: '/src/utils/386740768_872424397767634_2406891365353878124_n.jpg',
+      src: '/images/386740768_872424397767634_2406891365353878124_n.jpg',
       span: 'col-span-2 row-span-2',
-      category: 'Wedding'
+      category: 'Wedding',
     },
     {
-      src: '/src/utils/430018448_719210467048641_4958362212388547001_n.jpg',
+      src: '/images/430018448_719210467048641_4958362212388547001_n.jpg',
       span: 'col-span-1 row-span-1',
-      category: 'Portrait'
+      category: 'Portrait',
     },
     {
-      src: '/src/utils/409082841_719210353715319_1512343650740324422_n.jpg',
+      src: '/images/409082841_719210353715319_1512343650740324422_n.jpg',
       span: 'col-span-1 row-span-1',
-      category: 'Event'
+      category: 'Event',
     },
     {
-      src: '/src/utils/431679952_727171266252561_8333342145955110732_n.jpg',
+      src: '/images/431679952_727171266252561_8333342145955110732_n.jpg',
       span: 'col-span-1 row-span-2',
-      category: 'Fashion'
+      category: 'Fashion',
     },
     {
-      src: '/src/utils/431718465_727171112919243_3864534063747622005_n.jpg',
+      src: '/images/431718465_727171112919243_3864534063747622005_n.jpg',
       span: 'col-span-2 row-span-1',
-      category: 'Wedding'
+      category: 'Wedding',
     },
     {
-      src: '/src/utils/431383707_727171029585918_6909410846438431688_n.jpg',
+      src: '/images/431383707_727171029585918_6909410846438431688_n.jpg',
       span: 'col-span-1 row-span-1',
-      category: 'Portrait'
+      category: 'Portrait',
     },
     {
-      src: '/src/utils/449250711_792240543078966_6040839960755229386_n.jpg',
+      src: '/images/449250711_792240543078966_6040839960755229386_n.jpg',
       span: 'col-span-2 row-span-2',
-      category: 'Event'
+      category: 'Event',
     },
     {
-      src: '/src/utils/424982953_719164643719890_993065263064835104_n.jpg',
+      src: '/images/424982953_719164643719890_993065263064835104_n.jpg',
       span: 'col-span-1 row-span-1',
-      category: 'Fashion'
+      category: 'Fashion',
     },
     {
-      src: '/src/utils/363385928_831559638520777_2058469060770947524_n.jpg',
+      src: '/images/363385928_831559638520777_2058469060770947524_n.jpg',
       span: 'col-span-1 row-span-1',
-      category: 'Portrait'
-    }
+      category: 'Portrait',
+    },
   ];
 
   return (
@@ -86,17 +85,17 @@ const Photography = () => {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <ImageOptimizer
-            src="/src/utils/472179219_920601650242854_7270190166170734193_n.jpg"
+            src="/images/472179219_920601650242854_7270190166170734193_n.jpg"
             alt="Photography Hero"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/80 to-dark/50" />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-dark/50 to-dark" />
         </div>
-        
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 text-center">
           <ScrollReveal>
-            <motion.span 
+            <motion.span
               className="inline-block px-4 py-2 bg-primary-500/20 backdrop-blur-sm rounded-full text-primary-400 text-sm mb-6"
             >
               Professional Photography Services
@@ -180,7 +179,7 @@ const Photography = () => {
                     className="w-full h-full object-cover"
                   />
                 </motion.div>
-                <motion.div 
+                <motion.div
                   className="absolute inset-0 bg-gradient-to-t from-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                   initial={{ opacity: 0 }}
                   whileHover={{ opacity: 1 }}
@@ -233,7 +232,7 @@ const Photography = () => {
               { value: "500+", label: "Photo Sessions" },
               { value: "200+", label: "Happy Clients" },
               { value: "15+", label: "Years Experience" },
-              { value: "50+", label: "Awards Won" }
+              { value: "50+", label: "Awards Won" },
             ].map((stat, index) => (
               <ScrollReveal key={index} delay={index * 0.1}>
                 <div className="text-center">
