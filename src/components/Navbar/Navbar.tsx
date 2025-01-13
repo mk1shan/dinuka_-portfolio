@@ -1,6 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Menu } from 'lucide-react';
+<<<<<<< HEAD
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+=======
+import { Link, useLocation } from 'react-router-dom';
+>>>>>>> 4c7f779645d73aa08ec4ef9a2b7e1962d1fdaec4
 import { motion, AnimatePresence } from 'framer-motion';
 import Logo from './Logo';
 import NavLink from './NavLink';
@@ -11,7 +15,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+<<<<<<< HEAD
   const navigate = useNavigate();
+=======
+>>>>>>> 4c7f779645d73aa08ec4ef9a2b7e1962d1fdaec4
   const scrollToSection = useScrollToSection();
 
   useEffect(() => {
@@ -26,6 +33,7 @@ const Navbar = () => {
 
   useEffect(() => {
     setIsOpen(false);
+<<<<<<< HEAD
     window.scrollTo(0, 0);
   }, [location]);
 
@@ -47,14 +55,29 @@ const Navbar = () => {
         targetSection.scrollIntoView({ behavior: 'smooth' });
       }
     }
+=======
+  }, [location]);
+
+  const handleSectionClick = (section: string) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    scrollToSection(section);
+    setIsOpen(false);
+>>>>>>> 4c7f779645d73aa08ec4ef9a2b7e1962d1fdaec4
   };
 
   return (
     <>
+<<<<<<< HEAD
       <div
         className={`fixed w-full z-50 transition-all duration-500 ${
           isScrolled
             ? 'bg-black/20 backdrop-blur-sm border-b border-white/5'
+=======
+      <div 
+        className={`fixed w-full z-50 transition-all duration-500 ${
+          isScrolled 
+            ? 'bg-black/20 backdrop-blur-sm border-b border-white/5' 
+>>>>>>> 4c7f779645d73aa08ec4ef9a2b7e1962d1fdaec4
             : 'bg-transparent'
         }`}
       >
@@ -66,10 +89,16 @@ const Navbar = () => {
 
             <div className="hidden md:flex items-center justify-center flex-grow">
               <div className="flex items-center space-x-2">
+<<<<<<< HEAD
                 <NavLink to="/">Home</NavLink>
                 <NavLink to="/photography">Photography</NavLink>
                 <NavLink to="/videography">Videography</NavLink>
                 {['services', 'contact'].map((item) => (
+=======
+                <NavLink to="/photography">Photography</NavLink>
+                <NavLink to="/videography">Videography</NavLink>
+                {['about', 'services', 'contact'].map((item) => (
+>>>>>>> 4c7f779645d73aa08ec4ef9a2b7e1962d1fdaec4
                   <motion.button
                     key={item}
                     onClick={handleSectionClick(item)}
@@ -85,7 +114,12 @@ const Navbar = () => {
                         }
                       }}
                     />
+<<<<<<< HEAD
                     <motion.span
+=======
+                    
+                    <motion.span 
+>>>>>>> 4c7f779645d73aa08ec4ef9a2b7e1962d1fdaec4
                       className="relative z-10 text-base font-medium capitalize text-white/80 group-hover:text-white transition-colors duration-300"
                       variants={{
                         hover: {
@@ -96,11 +130,19 @@ const Navbar = () => {
                     >
                       {item}
                     </motion.span>
+<<<<<<< HEAD
+=======
+                    
+>>>>>>> 4c7f779645d73aa08ec4ef9a2b7e1962d1fdaec4
                     <motion.div
                       className="absolute bottom-1 left-1/2 -translate-x-1/2 h-0.5 bg-primary-500/50 w-0 group-hover:w-1/2 transition-all duration-300"
                       variants={{
                         hover: {
+<<<<<<< HEAD
                           width: '50%',
+=======
+                          width: "50%",
+>>>>>>> 4c7f779645d73aa08ec4ef9a2b7e1962d1fdaec4
                           transition: { duration: 0.3 }
                         }
                       }}
@@ -126,7 +168,11 @@ const Navbar = () => {
 
         <div className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-transparent via-primary-500/10 to-transparent" />
       </div>
+<<<<<<< HEAD
 
+=======
+      
+>>>>>>> 4c7f779645d73aa08ec4ef9a2b7e1962d1fdaec4
       <AnimatePresence mode="wait">
         {isOpen && <MobileMenu key="mobile-menu" isOpen={isOpen} onClose={() => setIsOpen(false)} />}
       </AnimatePresence>
@@ -134,4 +180,8 @@ const Navbar = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Navbar;
+=======
+export default Navbar;
+>>>>>>> 4c7f779645d73aa08ec4ef9a2b7e1962d1fdaec4
