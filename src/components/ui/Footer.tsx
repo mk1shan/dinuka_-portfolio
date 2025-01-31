@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="text-gray-400 text-sm">
-            © {currentYear} All Rights Reserved - Mudipa Kishan
+            © {currentYear} All Rights Reserved
           </p>
         </div>
       </div>
